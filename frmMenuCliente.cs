@@ -21,5 +21,26 @@ namespace SistemaVentaAutosUsados
         {
 
         }
+
+        private void btnCatalogo_Click(object sender, EventArgs e)
+        {
+            frmCatalogo catalogoForm = new frmCatalogo(UsuarioActual.ID_Cliente);
+            catalogoForm.Show();
+        }
+
+        private void btnServicios_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCitas_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }

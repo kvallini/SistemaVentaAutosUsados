@@ -32,19 +32,79 @@ namespace SistemaVentaAutosUsados
         /// </summary>
         private void InitializeComponent()
         {
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.btnIngresar = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Location = new System.Drawing.Point(47, 50);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(150, 20);
+            this.txtUsuario.TabIndex = 0;
+            // 
+            // txtPassword
+            // 
+            this.txtPassword.Location = new System.Drawing.Point(47, 93);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '*';
+            this.txtPassword.Size = new System.Drawing.Size(150, 20);
+            this.txtPassword.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(108, 31);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Usuario";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(108, 77);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(34, 13);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Clave";
+            // 
+            // btnIngresar
+            // 
+            this.btnIngresar.Location = new System.Drawing.Point(87, 134);
+            this.btnIngresar.Name = "btnIngresar";
+            this.btnIngresar.Size = new System.Drawing.Size(75, 23);
+            this.btnIngresar.TabIndex = 4;
+            this.btnIngresar.Text = "Ingresar";
+            this.btnIngresar.UseVisualStyleBackColor = true;
+            this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 309);
+            this.ClientSize = new System.Drawing.Size(243, 213);
+            this.Controls.Add(this.btnIngresar);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUsuario);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private TextBox txtUsuario;
+        private TextBox txtPassword;
+        private Label label1;
+        private Label label2;
+        private Button btnIngresar;
     }
 }

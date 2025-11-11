@@ -76,6 +76,7 @@
       <DependentUpon>frmMenuCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\UsuarioActual.cs" />
     <Compile Include="Models\Vehiculo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

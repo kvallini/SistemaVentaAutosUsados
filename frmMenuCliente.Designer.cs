@@ -152,5 +152,7 @@
         private System.Windows.Forms.Button btnServicios;
         private System.Windows.Forms.Button btnCatalogo;
         private System.Windows.Forms.Button button1;
+
+
     }
 }

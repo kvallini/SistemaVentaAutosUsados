@@ -192,10 +192,10 @@ namespace SistemaVentaAutosUsados
             // Por ahora vacío
         }
 
-        private void dtgVehiculos_SelectionChanged(object sender, EventArgs e)
-        {
+        //private void dtgVehiculos_SelectionChanged(object sender, EventArgs e)
+        //{
             // Por ahora vacío
-        }
+        //}
 
         private void pictureBoxVehiculo_Click(object sender, EventArgs e)
         {

@@ -63,7 +63,7 @@
             this.dtgVehiculos.Size = new System.Drawing.Size(600, 250);
             this.dtgVehiculos.TabIndex = 0;
             this.dtgVehiculos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgVehiculos_CellContentClick);
-            this.dtgVehiculos.SelectionChanged += new System.EventHandler(this.dtgVehiculos_SelectionChanged);
+            //this.dtgVehiculos.SelectionChanged += new System.EventHandler(this.dtgVehiculos_SelectionChanged);
             // 
             // lblTitulo
             // 

@@ -56,218 +56,219 @@
             // 
             // btnSolicitarCita
             // 
-            this.btnSolicitarCita.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnSolicitarCita.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnSolicitarCita.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSolicitarCita.Location = new System.Drawing.Point(505, 492);
+            this.btnSolicitarCita.Location = new System.Drawing.Point(12, 415);
             this.btnSolicitarCita.Name = "btnSolicitarCita";
-            this.btnSolicitarCita.Size = new System.Drawing.Size(85, 30);
+            this.btnSolicitarCita.Size = new System.Drawing.Size(100, 23);
             this.btnSolicitarCita.TabIndex = 0;
             this.btnSolicitarCita.Text = "Solicitar Cita";
-            this.btnSolicitarCita.UseVisualStyleBackColor = false;
+            this.btnSolicitarCita.UseVisualStyleBackColor = true;
+            this.btnSolicitarCita.Click += new System.EventHandler(this.btnSolicitarCita_Click);
             // 
             // btnReservar
             // 
-            this.btnReservar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnReservar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnReservar.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReservar.Location = new System.Drawing.Point(634, 492);
+            this.btnReservar.Location = new System.Drawing.Point(118, 415);
             this.btnReservar.Name = "btnReservar";
-            this.btnReservar.Size = new System.Drawing.Size(85, 30);
+            this.btnReservar.Size = new System.Drawing.Size(100, 23);
             this.btnReservar.TabIndex = 1;
             this.btnReservar.Text = "Reservar";
-            this.btnReservar.UseVisualStyleBackColor = false;
+            this.btnReservar.UseVisualStyleBackColor = true;
+            this.btnReservar.Click += new System.EventHandler(this.btnReservar_Click);
             // 
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
-            this.lblTitulo.Location = new System.Drawing.Point(70, 95);
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(12, 9);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(0, 13);
+            this.lblTitulo.Size = new System.Drawing.Size(208, 24);
             this.lblTitulo.TabIndex = 2;
+            this.lblTitulo.Text = "Detalles del Vehículo";
             // 
             // lblMarca
             // 
             this.lblMarca.AutoSize = true;
-            this.lblMarca.Location = new System.Drawing.Point(27, 90);
+            this.lblMarca.Location = new System.Drawing.Point(13, 79);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(37, 13);
+            this.lblMarca.Size = new System.Drawing.Size(40, 13);
             this.lblMarca.TabIndex = 3;
-            this.lblMarca.Text = "Marca";
+            this.lblMarca.Text = "Marca:";
             // 
             // lblModelo
             // 
             this.lblModelo.AutoSize = true;
-            this.lblModelo.Location = new System.Drawing.Point(27, 120);
+            this.lblModelo.Location = new System.Drawing.Point(13, 104);
             this.lblModelo.Name = "lblModelo";
-            this.lblModelo.Size = new System.Drawing.Size(42, 13);
+            this.lblModelo.Size = new System.Drawing.Size(45, 13);
             this.lblModelo.TabIndex = 4;
-            this.lblModelo.Text = "Modelo";
+            this.lblModelo.Text = "Modelo:";
             // 
             // lblAño
             // 
             this.lblAño.AutoSize = true;
-            this.lblAño.Location = new System.Drawing.Point(27, 150);
+            this.lblAño.Location = new System.Drawing.Point(13, 129);
             this.lblAño.Name = "lblAño";
-            this.lblAño.Size = new System.Drawing.Size(26, 13);
+            this.lblAño.Size = new System.Drawing.Size(29, 13);
             this.lblAño.TabIndex = 5;
-            this.lblAño.Text = "Año";
+            this.lblAño.Text = "Año:";
             // 
             // lblColor
             // 
             this.lblColor.AutoSize = true;
-            this.lblColor.Location = new System.Drawing.Point(27, 180);
+            this.lblColor.Location = new System.Drawing.Point(13, 154);
             this.lblColor.Name = "lblColor";
-            this.lblColor.Size = new System.Drawing.Size(31, 13);
+            this.lblColor.Size = new System.Drawing.Size(34, 13);
             this.lblColor.TabIndex = 6;
-            this.lblColor.Text = "Color";
+            this.lblColor.Text = "Color:";
             // 
             // lblPrecio
             // 
             this.lblPrecio.AutoSize = true;
-            this.lblPrecio.Location = new System.Drawing.Point(27, 210);
+            this.lblPrecio.Location = new System.Drawing.Point(13, 179);
             this.lblPrecio.Name = "lblPrecio";
-            this.lblPrecio.Size = new System.Drawing.Size(37, 13);
+            this.lblPrecio.Size = new System.Drawing.Size(40, 13);
             this.lblPrecio.TabIndex = 7;
-            this.lblPrecio.Text = "Precio";
+            this.lblPrecio.Text = "Precio:";
             // 
             // lblKilometraje
             // 
             this.lblKilometraje.AutoSize = true;
-            this.lblKilometraje.Location = new System.Drawing.Point(27, 240);
+            this.lblKilometraje.Location = new System.Drawing.Point(13, 204);
             this.lblKilometraje.Name = "lblKilometraje";
-            this.lblKilometraje.Size = new System.Drawing.Size(58, 13);
+            this.lblKilometraje.Size = new System.Drawing.Size(61, 13);
             this.lblKilometraje.TabIndex = 8;
-            this.lblKilometraje.Text = "Kilometraje";
+            this.lblKilometraje.Text = "Kilometraje:";
             // 
             // btnVolver
             // 
-            this.btnVolver.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnVolver.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVolver.Location = new System.Drawing.Point(767, 492);
+            this.btnVolver.Location = new System.Drawing.Point(224, 415);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(85, 30);
+            this.btnVolver.Size = new System.Drawing.Size(100, 23);
             this.btnVolver.TabIndex = 9;
             this.btnVolver.Text = "Volver";
-            this.btnVolver.UseVisualStyleBackColor = false;
+            this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // lblCombustible
             // 
             this.lblCombustible.AutoSize = true;
-            this.lblCombustible.Location = new System.Drawing.Point(27, 326);
+            this.lblCombustible.Location = new System.Drawing.Point(13, 260);
             this.lblCombustible.Name = "lblCombustible";
-            this.lblCombustible.Size = new System.Drawing.Size(95, 13);
+            this.lblCombustible.Size = new System.Drawing.Size(106, 13);
             this.lblCombustible.TabIndex = 10;
-            this.lblCombustible.Text = "Combustible/Clase";
+            this.lblCombustible.Text = "Tipo de Combustible:";
             // 
             // lblTransmision
             // 
             this.lblTransmision.AutoSize = true;
-            this.lblTransmision.Location = new System.Drawing.Point(27, 356);
+            this.lblTransmision.Location = new System.Drawing.Point(13, 285);
             this.lblTransmision.Name = "lblTransmision";
-            this.lblTransmision.Size = new System.Drawing.Size(63, 13);
+            this.lblTransmision.Size = new System.Drawing.Size(66, 13);
             this.lblTransmision.TabIndex = 11;
-            this.lblTransmision.Text = "Transmisión";
+            this.lblTransmision.Text = "Transmisión:";
             // 
             // lblPasajeros
             // 
             this.lblPasajeros.AutoSize = true;
-            this.lblPasajeros.Location = new System.Drawing.Point(27, 386);
+            this.lblPasajeros.Location = new System.Drawing.Point(13, 310);
             this.lblPasajeros.Name = "lblPasajeros";
-            this.lblPasajeros.Size = new System.Drawing.Size(53, 13);
+            this.lblPasajeros.Size = new System.Drawing.Size(96, 13);
             this.lblPasajeros.TabIndex = 12;
-            this.lblPasajeros.Text = "Pasajeros";
+            this.lblPasajeros.Text = "Número Pasajeros:";
             // 
             // lblPuertas
             // 
             this.lblPuertas.AutoSize = true;
-            this.lblPuertas.Location = new System.Drawing.Point(27, 416);
+            this.lblPuertas.Location = new System.Drawing.Point(13, 335);
             this.lblPuertas.Name = "lblPuertas";
-            this.lblPuertas.Size = new System.Drawing.Size(43, 13);
+            this.lblPuertas.Size = new System.Drawing.Size(86, 13);
             this.lblPuertas.TabIndex = 13;
-            this.lblPuertas.Text = "Puertas";
+            this.lblPuertas.Text = "Número Puertas:";
             // 
             // lblTipo
             // 
             this.lblTipo.AutoSize = true;
-            this.lblTipo.Location = new System.Drawing.Point(27, 446);
+            this.lblTipo.Location = new System.Drawing.Point(13, 360);
             this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(28, 13);
+            this.lblTipo.Size = new System.Drawing.Size(31, 13);
             this.lblTipo.TabIndex = 14;
-            this.lblTipo.Text = "Tipo";
+            this.lblTipo.Text = "Tipo:";
             // 
             // pictureBoxFoto1
             // 
-            this.pictureBoxFoto1.Location = new System.Drawing.Point(516, 64);
+            this.pictureBoxFoto1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBoxFoto1.Location = new System.Drawing.Point(403, 50);
             this.pictureBoxFoto1.Name = "pictureBoxFoto1";
             this.pictureBoxFoto1.Size = new System.Drawing.Size(300, 200);
+            this.pictureBoxFoto1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxFoto1.TabIndex = 15;
             this.pictureBoxFoto1.TabStop = false;
             // 
             // txtEquipamientoBasico
             // 
-            this.txtEquipamientoBasico.Location = new System.Drawing.Point(228, 328);
+            this.txtEquipamientoBasico.Location = new System.Drawing.Point(403, 275);
             this.txtEquipamientoBasico.Multiline = true;
             this.txtEquipamientoBasico.Name = "txtEquipamientoBasico";
+            this.txtEquipamientoBasico.ReadOnly = true;
             this.txtEquipamientoBasico.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtEquipamientoBasico.Size = new System.Drawing.Size(100, 20);
+            this.txtEquipamientoBasico.Size = new System.Drawing.Size(300, 50);
             this.txtEquipamientoBasico.TabIndex = 16;
             // 
             // txtEquipamientoConfort
             // 
-            this.txtEquipamientoConfort.Location = new System.Drawing.Point(227, 366);
+            this.txtEquipamientoConfort.Location = new System.Drawing.Point(403, 340);
             this.txtEquipamientoConfort.Multiline = true;
             this.txtEquipamientoConfort.Name = "txtEquipamientoConfort";
+            this.txtEquipamientoConfort.ReadOnly = true;
             this.txtEquipamientoConfort.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtEquipamientoConfort.Size = new System.Drawing.Size(100, 20);
+            this.txtEquipamientoConfort.Size = new System.Drawing.Size(300, 50);
             this.txtEquipamientoConfort.TabIndex = 17;
             // 
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
-            this.lblEstado.Location = new System.Drawing.Point(27, 474);
+            this.lblEstado.Location = new System.Drawing.Point(13, 385);
             this.lblEstado.Name = "lblEstado";
-            this.lblEstado.Size = new System.Drawing.Size(40, 13);
+            this.lblEstado.Size = new System.Drawing.Size(43, 13);
             this.lblEstado.TabIndex = 18;
-            this.lblEstado.Text = "Estado";
+            this.lblEstado.Text = "Estado:";
             // 
             // txtEquipamientoSeguridad
             // 
-            this.txtEquipamientoSeguridad.Location = new System.Drawing.Point(227, 404);
+            this.txtEquipamientoSeguridad.Location = new System.Drawing.Point(403, 405);
             this.txtEquipamientoSeguridad.Multiline = true;
             this.txtEquipamientoSeguridad.Name = "txtEquipamientoSeguridad";
+            this.txtEquipamientoSeguridad.ReadOnly = true;
             this.txtEquipamientoSeguridad.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.txtEquipamientoSeguridad.Size = new System.Drawing.Size(100, 20);
+            this.txtEquipamientoSeguridad.Size = new System.Drawing.Size(300, 50);
             this.txtEquipamientoSeguridad.TabIndex = 19;
             // 
             // lblInformacionBasica
             // 
             this.lblInformacionBasica.AutoSize = true;
-            this.lblInformacionBasica.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblInformacionBasica.Location = new System.Drawing.Point(27, 64);
+            this.lblInformacionBasica.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblInformacionBasica.Location = new System.Drawing.Point(13, 59);
             this.lblInformacionBasica.Name = "lblInformacionBasica";
-            this.lblInformacionBasica.Size = new System.Drawing.Size(139, 16);
+            this.lblInformacionBasica.Size = new System.Drawing.Size(115, 13);
             this.lblInformacionBasica.TabIndex = 20;
-            this.lblInformacionBasica.Text = "Informacion Basica";
+            this.lblInformacionBasica.Text = "Información Básica";
             // 
             // lblEspecificaciones
             // 
             this.lblEspecificaciones.AutoSize = true;
-            this.lblEspecificaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEspecificaciones.Location = new System.Drawing.Point(33, 288);
+            this.lblEspecificaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEspecificaciones.Location = new System.Drawing.Point(13, 237);
             this.lblEspecificaciones.Name = "lblEspecificaciones";
-            this.lblEspecificaciones.Size = new System.Drawing.Size(126, 16);
+            this.lblEspecificaciones.Size = new System.Drawing.Size(103, 13);
             this.lblEspecificaciones.TabIndex = 21;
             this.lblEspecificaciones.Text = "Especificaciones";
             // 
             // lblEquipamiento
             // 
             this.lblEquipamiento.AutoSize = true;
-            this.lblEquipamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEquipamiento.Location = new System.Drawing.Point(225, 288);
+            this.lblEquipamiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEquipamiento.Location = new System.Drawing.Point(400, 250);
             this.lblEquipamiento.Name = "lblEquipamiento";
-            this.lblEquipamiento.Size = new System.Drawing.Size(102, 16);
+            this.lblEquipamiento.Size = new System.Drawing.Size(83, 13);
             this.lblEquipamiento.TabIndex = 22;
             this.lblEquipamiento.Text = "Equipamiento";
             // 
@@ -275,7 +276,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(894, 561);
+            this.ClientSize = new System.Drawing.Size(757, 545);
             this.Controls.Add(this.lblEquipamiento);
             this.Controls.Add(this.lblEspecificaciones);
             this.Controls.Add(this.lblInformacionBasica);
@@ -300,7 +301,8 @@
             this.Controls.Add(this.btnReservar);
             this.Controls.Add(this.btnSolicitarCita);
             this.Name = "fmrDetalleVehiculo";
-            this.Text = "Detalles del Vehiculo";
+            this.Text = "Detalles del Vehículo";
+            this.Load += new System.EventHandler(this.fmrDetalleVehiculo_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxFoto1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

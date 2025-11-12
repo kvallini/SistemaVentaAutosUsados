@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
 
 namespace SistemaVentaAutosUsados
@@ -134,6 +136,47 @@ namespace SistemaVentaAutosUsados
             }
         }
 
+        private void dtgVehiculos_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dtgVehiculos.CurrentRow != null)
+            {
+                // Obtener el nombre de la imagen del vehículo seleccionado
+                string nombreImagen = dtgVehiculos.CurrentRow.Cells["Imagen_Principal"].Value?.ToString();
+                CargarImagenEnPictureBox(nombreImagen);
+            }
+        }
+
+        private void CargarImagenEnPictureBox(string nombreImagen)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(nombreImagen))
+                {
+                    pictureBoxVehiculo.Image = null; // Limpiar si no hay imagen
+                    return;
+                }
+
+                string rutaBase = @"C:\C#2025\IIICUATRI\PROYECTO\FOTOSVEH\";
+                string rutaCompleta = Path.Combine(rutaBase, nombreImagen);
+
+                if (File.Exists(rutaCompleta))
+                {
+                    pictureBoxVehiculo.Image = Image.FromFile(rutaCompleta);
+                    pictureBoxVehiculo.SizeMode = PictureBoxSizeMode.Zoom;
+                }
+                else
+                {
+                    pictureBoxVehiculo.Image = null;
+                    // Opcional: cargar imagen por defecto
+                    // pictureBoxVehiculo.Image = Properties.Resources.imagen_no_disponible;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error al cargar imagen: " + ex.Message);
+                pictureBoxVehiculo.Image = null;
+            }
+        }
         private void btnVolver_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -153,5 +196,12 @@ namespace SistemaVentaAutosUsados
         {
             // Por ahora vacío
         }
+
+        private void pictureBoxVehiculo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
     }
 }
